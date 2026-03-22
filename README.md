@@ -240,7 +240,7 @@ DiscordBotRAG/
 
 ### Why Gemini over local LLMs?
 - **Zero GPU requirement** — runs on any machine
-- **Free API tier** — 15 RPM, 1M tokens/day
+- **Free API tier** — 10 RPM, 1M tokens/day
 - **Multimodal built-in** — same API for text and vision
 - **Fast response times** — <2 seconds typical
 
@@ -259,8 +259,8 @@ All settings are configurable via `.env`:
 |----------|---------|-------------|
 | `DISCORD_TOKEN` | — | Discord bot token (required) |
 | `GEMINI_API_KEY` | — | Google Gemini API key (required) |
-| `GEMINI_MODEL` | `gemini-2.0-flash` | Model for text generation |
-| `GEMINI_VISION_MODEL` | `gemini-2.0-flash` | Model for image analysis |
+| `GEMINI_MODEL` | `gemini-2.5-flash` | Model for text generation |
+| `GEMINI_VISION_MODEL` | `gemini-2.5-flash` | Model for image analysis |
 | `EMBEDDING_MODEL` | `all-MiniLM-L6-v2` | Sentence-transformers model |
 | `CHUNK_SIZE` | `500` | Max characters per document chunk |
 | `CHUNK_OVERLAP` | `50` | Character overlap between chunks |
